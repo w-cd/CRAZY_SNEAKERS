@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>N$ login</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(./img/aaa.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .login-inicial {
+            background-color: black;
+            margin: 5% 20% 5% 20%;
+            color: white;
+            padding: 2%;
+            border: 2px solid black;
+            flex-grow: 3;
+        }
+           
+        .login-inicial h1 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .login-inicial h2 {
+            font-size: 1.2rem;
+        }
+
+        .inp {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .botoes {
+            width: 30%;
+            padding: 15px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 15px;
+            margin-top: 5%;
+            margin-left: 12%;
+        }
+
+        .botoes:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilos do Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .footer-links li {
+            display: inline;
+        }
+        
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #ff6347; /* Cor de destaque ao passar o mouse */
+        }
+        
+        .footer-social {
+            margin-top: 20px;
+        }
+        
+        .footer-social a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-social a:hover {
+            color: #ff6347; /* Cor de destaque ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="login-inicial">
+        <h1>Criar Conta</h1>
+        <form action="index.html">
+            <!--NOME-->
+            <h2 for="nome_login">Nome completo</h2>
+            <input class="inp" id="nome_login" type="text" name="username" placeholder="Nome de Usuário" required>
+            <br>    
+
+            <!--E-MAIL-->
+            <h2 for="email_login">E-mail</h2>
+            <input class="inp" id="email_login" type="email" placeholder="ex:seunome@email.com.br" required>
+            <br>
+
+            <h2 for="tel_login">Telefone (opcional)</h2>
+            <input class="inp" id="tel_login" type="tel" placeholder="ex: 11971923030">
+            <br>
+
+            <h2 for="senha_login">Senha</h2>
+            <input class="inp" id="senha_login" type="password" placeholder="Senha" required>
+            <br>
+
+            <h2 for="confir_senha">Confirmar senha</h2>
+            <input class="inp" id="confir_senha" type="password" placeholder="Senha" required>
+
+            <button class="botoes" type="submit">Criar Conta</button>
+            <input class="botoes" type="button" id="logar_conta" onclick="location.href = 'iniciar_sessao.html'" value="Conectar conta">
+        </form>
+    </div>
+
+    <!--DIREITOS E CONTATOS DO SITE-->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Nome da Empresa. Todos os direitos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="devs.html">Sobre Nós</a></li>
+                <li><a href="/politica_priv.html">Política de Privacidade</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/neospectrum7">Instagram</a>|
+                <a href="">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
